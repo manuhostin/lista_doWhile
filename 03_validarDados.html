@@ -11,8 +11,31 @@
     */
 
     //Entrada
-
-
+    let nome = prompt('Digite o nome:');
+    while (nome.length <= 3) {
+        nome = prompt('Digite o nome:');
+        
+    }
+    let idade = Number(prompt('Digite a idade:'));
+    while (idade < 0 || idade >= 150) {
+        idade = prompt('Digite a idade:');
+        
+    }
+    let salario = Number(prompt('Digite o salario:'));
+    while (salario < 0) {
+        salario = prompt('Digite o salário:');
+        
+    }
+    let sexo = prompt('Digite o sexo. F- feminino, M- masculino:').toUpperCase();
+    while (sexo != "M" && sexo != "F") {
+        sexo = prompt('Digite o sexo F- feminino, M- masculino::').toUpperCase();
+        
+    }
+    let ec = prompt('Digite o estado civil. S- Solteiro, C- Casado, V- Viuvo/a, D- Divorciado:').toUpperCase();
+    while (ec != "S" && ec != "C" && ec != "V" && ec != "D") {
+        sexo = prompt('Digite o estado civil S- Solteiro, C- Casado, V- Viuvo/a, D- Divorciado :').toUpperCase();
+        
+    }
     //Processamento
 
 
