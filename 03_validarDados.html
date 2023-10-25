@@ -33,9 +33,15 @@
     }
     let ec = prompt('Digite o estado civil. S- Solteiro, C- Casado, V- Viuvo/a, D- Divorciado:').toUpperCase();
     while (ec != "S" && ec != "C" && ec != "V" && ec != "D") {
-        sexo = prompt('Digite o estado civil S- Solteiro, C- Casado, V- Viuvo/a, D- Divorciado :').toUpperCase();
+        ec = prompt('Digite o estado civil S- Solteiro, C- Casado, V- Viuvo/a, D- Divorciado :').toUpperCase();
         
     }
+    document.write (`nome: ${nome}
+    idade: ${idade}
+    salario: ${salario}
+    sexo: ${sexo}
+    estado civil: ${ec}
+    `);
     //Processamento
 
 

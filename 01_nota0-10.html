@@ -10,7 +10,11 @@
 
     //Processamento
 
- ccc
+    let numero = Number(prompt("Digite uma nota entre 1 e 10:"));
+while (numero < 1 || numero > 10) {
+    numero = Number(prompt("Digite uma nota entre 1 e 10:"));
+}
+document(`nota ${numero}`);
     //Saída
 
 </script>
